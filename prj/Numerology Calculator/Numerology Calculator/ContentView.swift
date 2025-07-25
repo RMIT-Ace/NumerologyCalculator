@@ -14,6 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            
             HStack {
                 Spacer()
                 Text("\(numeroNumber)")
@@ -39,8 +41,14 @@ struct ContentView: View {
             
             Spacer()
             VStack {
-                Text(numberMeanings[numeroNumber] ?? "")
+               ScrollView {
+                    Text(numberMeanings[numeroNumber] ?? "")
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .italic()
+                }
             }
+            .frame(height: 300)
+            .frame(maxWidth: .infinity)
             .padding()
             .cornerRadius(10)
             .overlay {
@@ -48,6 +56,8 @@ struct ContentView: View {
                     .stroke(style: StrokeStyle(lineWidth: 2))
             }
             .padding()
+            
+            Spacer()
         }
         .padding(.horizontal, 6)
         .onChange(of: digits) { _, newDigits in
