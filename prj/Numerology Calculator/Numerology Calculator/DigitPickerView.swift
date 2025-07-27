@@ -12,26 +12,29 @@ struct DigitPickerView: View {
     @Binding var digit: Int
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 8) {
             Button {
                 digit += 1
                 if digit > 9 {
                     digit = 0
                 }
             } label: {
-                Image(systemName: "triangle")
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 2)
+                ZStack {
+                    Color.black.opacity(0.01)
+                        .frame(width: 28, height: 28)
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .frame(width: 4, height: 4)
+                }
             }
+            .buttonStyle(.plain)
 
             Text("\(digit)")
-                .font(.system(size: 24, weight: .bold, design: .default))
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .cornerRadius(10)
+                .font(.system(size: 26, weight: .bold, design: .default))
+                .frame(width: 20)
                 .overlay {
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(style: StrokeStyle(lineWidth: 2))
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(style: StrokeStyle(lineWidth: 1))
                 }
             
             Button {
@@ -40,23 +43,27 @@ struct DigitPickerView: View {
                     digit = 9
                 }
             } label: {
-                Image(systemName: "triangle")
-                    .rotationEffect(.degrees(180))
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 2)
+                ZStack {
+                    Color.black.opacity(0.01)
+                        .frame(width: 28, height: 28)
+                    Image(systemName: "circle.fill")
+                        .resizable()
+                        .frame(width: 4, height: 4)
+                }
             }
+            .buttonStyle(.plain)
 
         }
-        .padding(2)
     }
 }
 
 #Preview {
     @Previewable @State var digits: [Int] = [ 1, 2, 3, 4, 5, 6, 7, 8 ]
-    HStack(spacing: 0) {
-        ForEach(0..<8) { i in
-            DigitPickerView(digit: $digits[i])
+    ScrollView(.horizontal) {
+        HStack(spacing: 0) {
+            ForEach(0..<8) { i in
+                DigitPickerView(digit: $digits[i])
+            }
         }
     }
-    .padding()
 }
