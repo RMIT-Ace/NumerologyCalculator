@@ -48,7 +48,7 @@ func isMasterNumber(_ number: Int) -> Bool {
 
 let numberMeanings: [Int: String] = [
     0: """
-       Please input some numbers.
+       ???
        """,
     1: """
        Originality. Leadership. Create own path. Confidence. Independent.

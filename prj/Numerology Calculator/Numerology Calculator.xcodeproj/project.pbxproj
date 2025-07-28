@@ -43,6 +43,7 @@
 		50508D402E34CF920026EC7D /* Exceptions for "Numerology Calculator" folder in "Numero Calculator Watch App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				ContentView.swift,
 				DigitPickerView.swift,
 				Numerology.swift,
 			);

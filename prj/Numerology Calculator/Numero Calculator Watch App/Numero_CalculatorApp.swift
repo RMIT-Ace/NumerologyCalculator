@@ -11,7 +11,7 @@ import SwiftUI
 struct Numero_Calculator_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            WatchContentView()
+            ContentView()
         }
     }
 }
