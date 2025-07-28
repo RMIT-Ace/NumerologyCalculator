@@ -44,6 +44,8 @@ func isMasterNumber(_ number: Int) -> Bool {
  
  2. https://www.numerology.com/articles/about-numerology/single-digit-numbers-in-numerology/
  
+ 3. https://www.instagram.com/reel/C8a5sHuoJYF/
+ 
  */
 
 let numberMeanings: [Int: String] = [
@@ -54,63 +56,79 @@ let numberMeanings: [Int: String] = [
        Originality. Leadership. Create own path. Confidence. Independent.
        Goal-oriented. Innovative. Proactive. Pioneering.  Motivated.
        Freedom-loving.
+       Friends: 1, 5, 7
        
        Forceful. Risky. Doubtful. Self-centered. Reckless.
+       Foes: 4, 6
        """,
     2: """
        Balance. High intuitive. Establish relationship. Unifying. Influential.
        Tactful. Sensitive. Coorporative. Inclusive. Supportive. Empathetic.
+       Friends: 2, 4, 8
        
-       Should learn to say "No". Indecisive. Easily hurt. Unassertive.
+       Indecisive. Easily hurt. Unassertive.
+       Foes: 5, 7
        """,
     3: """
        Authenticity. Communication. Creative expression. Charming personality.
        Artistic. Charming. Curious. Jovial. Youthful.
+       Friends: 3, 6, 9
        
        Naive. Unfocused. Shallow. Scattered. Optimistic. 
+       Foes: 4, 7, 8
        """,
     4: """
        Stability. Pragmatic, sensible, organized. Analystical mind. Plan maker.
        Loyal. Service-oriented. Strong. Traditional. Hard Worker. Patient.
        Dependable.
+       Friends: 2, 4, 8
        
-       Important to not to overwork, and avoid stress. Dogmatic. Dull. Rigid.
-       Strict.
+       Hard work, Stress. Dogmatic. Dull. Rigid. Strict.
+       Foes: 1, 3, 5, 9
        """,
     5: """
        Freedom. Adventurous, spontaneous risk-taker. Free spirit. Love to travel.
        Sales. Marketing. Curious. Adaptable. Social. Flexible. Energetic.
        Independent.
+       Friends: 1, 5, 7
        
        Non-committal. Unreliable. Directionless. Unpredictable.
        Restless. Inconsistent.
+       Foes: 2, 4, 6
        """,
     6: """
        Acceptance. Artist. Design, beauty, fine arts, aesthetics, music.
        Unconditional love. Supportive. Protective. Romantic. Caring. Healing.
        Compassionate. Nurturing. Warm. Harmonious.
+       Friends: 3, 6, 9
        
-       Must learn to love oneself. Passive. Self-sacrificing. Idealistic.
+       Passive. Self-sacrificing. Self-blaming. Idealistic.
+       Foes: 1, 5, 7
        """,
     7: """
        Truth. Knowledge. Curiosity. Field expert. Spiritual. Analytical.
        Teachers, trainers, advisors, consultants. Intellectual.
        Mysterious. 
+       Friends: 1, 5, 7
        
        Nerdy. Skeptics. Reclusive. Secretive. Suspicious. Reserved.
+       Foes: 2, 3, 6, 8, 9
        """,
     8: """
        Empowerment. Accomplishment in material realm. High position/incomes.
        Balanced. Dedicated. Prosperous. Strong. Professional. Goal-oriented.
+       Friends: 2, 4, 8
        
-       Must learn how to enjoy life. Ambition. Materialistic. Authoritative.
-       Entitled.
+       Take life too serious. Ambition. Materialistic. Authoritative. Entitled.
+       Foes: 3, 7, 9
        """,
     9: """
        Awakening. Completion. Wisdom, understanding, and compassion. Humanitarians.
        Tolerant. Supportive. Kind. Wise. Experienced. Spiritual. Aware.
+       Friends: 3, 6, 9
        
-       Learn to let go of attachments in life. Resentful. Sacrificing. Suffering.
+       Clinging. Resentful. Sacrificing. Suffering.
+       Foes: 4, 7, 8
        """,
     11: """
        Seer. Powerful intuition. Deep sense of awareness about the things we cannot see.
