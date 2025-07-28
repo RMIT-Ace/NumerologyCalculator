@@ -9,7 +9,8 @@ import SwiftUI
 import Numerology
 
 struct ContentView: View {
-    @State var digits: [Int] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    static let allZeros = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    @State var digits: [Int] = allZeros
     @State var numeroNumber: Int = 0
     @State var isMasterNumberReduced: Bool = false
     
@@ -18,8 +19,18 @@ struct ContentView: View {
             Section("Input digits") {
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0..<10) { i in
+                        ForEach(0 ..< 10) { i in
                             DigitPickerView(digit: $digits[i])
+                        }
+                        Button {
+                            digits = Self.allZeros
+                        } label: {
+                            Text("Reset")
+                                .padding()
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: 6)
+                                        .stroke(style: StrokeStyle(lineWidth: 1))
+                                }
                         }
                     }
                 }
