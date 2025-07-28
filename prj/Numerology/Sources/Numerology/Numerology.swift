@@ -5,6 +5,7 @@
 //  Created by Ace on 26/7/2025.
 //
 
+/// Calculate numerology number from a given series of integer numbers.
 public func calculateNumeroNumber(_ digits: [Int], reduceMasterNumber: Bool = false) -> Int {
     let result = digits.reduce(0, +)
     let shouldReduceResult: Bool = (
