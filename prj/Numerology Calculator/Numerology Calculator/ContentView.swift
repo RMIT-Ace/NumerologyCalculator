@@ -71,3 +71,16 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+import Playgrounds
+#Playground {
+    let series1 = 12345
+    let digitArray1 = numberToDigits(series1)
+    let numeroNumber1 = calculateNumeroNumber(digitArray1, reduceMasterNumber: false)
+    let isMasterNumeroNumber1 = isMasterNumber(numeroNumber1)
+    
+    let series2 = 24102002
+    let digitArray2 = numberToDigits(series2)
+    let numeroNumber2 = calculateNumeroNumber(digitArray2, reduceMasterNumber: false)
+    let isMasterNumeroNumber2 = isMasterNumber(numeroNumber2)
+}
