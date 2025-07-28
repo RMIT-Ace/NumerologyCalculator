@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504A1A262E371DD0006033A6 /* Numerology in Frameworks */ = {isa = PBXBuildFile; productRef = 504A1A252E371DD0006033A6 /* Numerology */; };
 		50508D372E34CDB00026EC7D /* Numero Calculator Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50508D2D2E34CDAF0026EC7D /* Numero Calculator Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50AFAEC12E37207700C96C47 /* Numerology in Frameworks */ = {isa = PBXBuildFile; productRef = 50AFAEC02E37207700C96C47 /* Numerology */; };
+		50DB937D2E371AF3000D8745 /* Numerology in Frameworks */ = {isa = PBXBuildFile; productRef = 50DB937C2E371AF3000D8745 /* Numerology */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +48,6 @@
 			membershipExceptions = (
 				ContentView.swift,
 				DigitPickerView.swift,
-				Numerology.swift,
 			);
 			target = 50508D2C2E34CDAF0026EC7D /* Numero Calculator Watch App */;
 		};
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AFAEC12E37207700C96C47 /* Numerology in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,17 +82,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DB937D2E371AF3000D8745 /* Numerology in Frameworks */,
+				504A1A262E371DD0006033A6 /* Numerology in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506569EA2E371E8300D51007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50D76A6E2E33034400CE1884 = {
 			isa = PBXGroup;
 			children = (
 				50D76A792E33034400CE1884 /* Numerology Calculator */,
 				50508D2E2E34CDAF0026EC7D /* Numero Calculator Watch App */,
+				506569EA2E371E8300D51007 /* Frameworks */,
 				50D76A782E33034400CE1884 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 			);
 			name = "Numero Calculator Watch App";
 			packageProductDependencies = (
+				50AFAEC02E37207700C96C47 /* Numerology */,
 			);
 			productName = "Numero Calculator Watch App";
 			productReference = 50508D2D2E34CDAF0026EC7D /* Numero Calculator Watch App.app */;
@@ -147,6 +161,8 @@
 			);
 			name = "Numerology Calculator";
 			packageProductDependencies = (
+				50DB937C2E371AF3000D8745 /* Numerology */,
+				504A1A252E371DD0006033A6 /* Numerology */,
 			);
 			productName = "Numerology Calculator";
 			productReference = 50D76A772E33034400CE1884 /* Numerology Calculator.app */;
@@ -179,6 +195,9 @@
 			);
 			mainGroup = 50D76A6E2E33034400CE1884;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50AFAEBF2E37207700C96C47 /* XCLocalSwiftPackageReference "../Numerology" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50D76A782E33034400CE1884 /* Products */;
 			projectDirPath = "";
@@ -499,6 +518,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		50AFAEBF2E37207700C96C47 /* XCLocalSwiftPackageReference "../Numerology" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Numerology;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		504A1A252E371DD0006033A6 /* Numerology */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Numerology;
+		};
+		50AFAEC02E37207700C96C47 /* Numerology */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Numerology;
+		};
+		50DB937C2E371AF3000D8745 /* Numerology */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Numerology;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50D76A6F2E33034400CE1884 /* Project object */;
 }

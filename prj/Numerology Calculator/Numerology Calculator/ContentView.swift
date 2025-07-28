@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Numerology
 
 struct ContentView: View {
     @State var digits: [Int] = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

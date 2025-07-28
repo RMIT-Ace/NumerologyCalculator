@@ -5,7 +5,7 @@
 //  Created by Ace on 26/7/2025.
 //
 
-func calculateNumeroNumber(_ digits: [Int], reduceMasterNumber: Bool = false) -> Int {
+public func calculateNumeroNumber(_ digits: [Int], reduceMasterNumber: Bool = false) -> Int {
     let result = digits.reduce(0, +)
     let shouldReduceResult: Bool = (
         ((result > 9) && !isMasterNumber(result)) ||
@@ -18,7 +18,7 @@ func calculateNumeroNumber(_ digits: [Int], reduceMasterNumber: Bool = false) ->
     }
 }
 
-func numberToDigits(_ number: Int) -> [Int] {
+public func numberToDigits(_ number: Int) -> [Int] {
     var digits: [Int] = []
     var num = number
     
@@ -30,9 +30,9 @@ func numberToDigits(_ number: Int) -> [Int] {
     return digits.reversed()
 }
 
-let masterNumbers: Set<Int> = [ 11, 22, 33 ]
+private let masterNumbers: Set<Int> = [ 11, 22, 33 ]
 
-func isMasterNumber(_ number: Int) -> Bool {
+public func isMasterNumber(_ number: Int) -> Bool {
     return masterNumbers.contains(number)
 }
 
@@ -48,7 +48,7 @@ func isMasterNumber(_ number: Int) -> Bool {
  
  */
 
-let numberMeanings: [Int: String] = [
+public let numberMeanings: [Int: String] = [
     0: """
        ???
        """,
