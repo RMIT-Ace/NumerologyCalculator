@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DVTConsoleDebuggerInputTextColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTConsoleDebuggerInputTextFont</key>
+	<string>MonofurForPowerline - 13.0</string>
+	<key>DVTConsoleDebuggerOutputTextColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTConsoleDebuggerOutputTextFont</key>
+	<string>MonofurForPowerline - 13.0</string>
+	<key>DVTConsoleDebuggerPromptTextColor</key>
+	<string>0.255 0.714 0.27 1</string>
+	<key>DVTConsoleDebuggerPromptTextFont</key>
+	<string>MonofurForPowerline - 13.0</string>
+	<key>DVTConsoleExectuableInputTextColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTConsoleExectuableInputTextFont</key>
+	<string>MonofurForPowerline - 13.0</string>
+	<key>DVTConsoleExectuableOutputTextColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTConsoleExectuableOutputTextFont</key>
+	<string>MonofurForPowerline - 13.0</string>
+	<key>DVTConsoleTextBackgroundColor</key>
+	<string>0.646613 0.685584 0.722786 1</string>
+	<key>DVTConsoleTextInsertionPointColor</key>
+	<string>0.733568 0.14445 0.0353548 1</string>
+	<key>DVTConsoleTextSelectionColor</key>
+	<string>0.317647 0.356862 0.439215 1</string>
+	<key>DVTCursor</key>
+	<integer>2</integer>
+	<key>DVTFontAndColorVersion</key>
+	<integer>1</integer>
+	<key>DVTFontSizeModifier</key>
+	<integer>-1</integer>
+	<key>DVTLineSpacing</key>
+	<real>1.1000000238418579</real>
+	<key>DVTMarkupTextBackgroundColor</key>
+	<string>0.18856 0.195 0.22444 1</string>
+	<key>DVTMarkupTextBorderColor</key>
+	<string>0.253475 0.2594 0.286485 1</string>
+	<key>DVTMarkupTextCodeFont</key>
+	<string>SFMono-Regular - 12.0</string>
+	<key>DVTMarkupTextEmphasisColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTMarkupTextEmphasisFont</key>
+	<string>.SFNS-RegularItalic - 14.0</string>
+	<key>DVTMarkupTextInlineCodeColor</key>
+	<string>1 1 1 0.7</string>
+	<key>DVTMarkupTextLinkColor</key>
+	<string>0.33 0.247124 0.894195 1</string>
+	<key>DVTMarkupTextLinkFont</key>
+	<string>.SFNS-Regular - 14.0</string>
+	<key>DVTMarkupTextNormalColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTMarkupTextNormalFont</key>
+	<string>.SFNS-Regular - 14.0</string>
+	<key>DVTMarkupTextOtherHeadingColor</key>
+	<string>1 1 1 0.5</string>
+	<key>DVTMarkupTextOtherHeadingFont</key>
+	<string>.SFNS-Regular - 18.8</string>
+	<key>DVTMarkupTextPrimaryHeadingColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTMarkupTextPrimaryHeadingFont</key>
+	<string>.SFNS-Regular - 30.8</string>
+	<key>DVTMarkupTextSecondaryHeadingColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTMarkupTextSecondaryHeadingFont</key>
+	<string>.SFNS-Regular - 23.6</string>
+	<key>DVTMarkupTextStrongColor</key>
+	<string>1 1 1 1</string>
+	<key>DVTMarkupTextStrongFont</key>
+	<string>.SFNS-Bold - 14.0</string>
+	<key>DVTScrollbarMarkerAnalyzerColor</key>
+	<string>0.403922 0.372549 1 1</string>
+	<key>DVTScrollbarMarkerBreakpointColor</key>
+	<string>0.290196 0.290196 0.968627 1</string>
+	<key>DVTScrollbarMarkerDiffColor</key>
+	<string>0.556863 0.556863 0.556863 1</string>
+	<key>DVTScrollbarMarkerDiffConflictColor</key>
+	<string>0.968627 0.290196 0.290196 1</string>
+	<key>DVTScrollbarMarkerErrorColor</key>
+	<string>0.968627 0.290196 0.290196 1</string>
+	<key>DVTScrollbarMarkerRuntimeIssueColor</key>
+	<string>0.643137 0.509804 1 1</string>
+	<key>DVTScrollbarMarkerWarningColor</key>
+	<string>0.937255 0.717647 0.34902 1</string>
+	<key>DVTSourceTextBackground</key>
+	<string>0.877742 0.934059 0.981229 1</string>
+	<key>DVTSourceTextBlockDimBackgroundColor</key>
+	<string>0.5 0.5 0.5 1</string>
+	<key>DVTSourceTextCurrentLineHighlightColor</key>
+	<string>0.6219 0.697273 0.774243 0.393654</string>
+	<key>DVTSourceTextInsertionPointColor</key>
+	<string>0 0.530294 0.220552 0.484785</string>
+	<key>DVTSourceTextInvisiblesColor</key>
+	<string>0.258298 0.300954 0.355207 1</string>
+	<key>DVTSourceTextSelectionColor</key>
+	<string>0.60591 0.778839 0.791016 0.749469</string>
+	<key>DVTSourceTextSyntaxColors</key>
+	<dict>
+		<key>xcode.syntax.attribute</key>
+		<string>0.74902 0.521569 0.333333 1</string>
+		<key>xcode.syntax.character</key>
+		<string>0.655095 0.602509 0.329341 1</string>
+		<key>xcode.syntax.comment</key>
+		<string>0.589347 0.653656 0.729078 1</string>
+		<key>xcode.syntax.comment.doc</key>
+		<string>0.423943 0.474618 0.525183 1</string>
+		<key>xcode.syntax.comment.doc.keyword</key>
+		<string>0.572549 0.631373 0.694118 1</string>
+		<key>xcode.syntax.declaration.other</key>
+		<string>0.254902 0.631373 0.752941 1</string>
+		<key>xcode.syntax.declaration.type</key>
+		<string>0.231801 0.522312 0.614948 1</string>
+		<key>xcode.syntax.identifier.class</key>
+		<string>0.384179 0.579533 0.534086 1</string>
+		<key>xcode.syntax.identifier.class.system</key>
+		<string>0.494789 0.398539 0.605138 1</string>
+		<key>xcode.syntax.identifier.constant</key>
+		<string>0.405383 0.717051 0.642088 1</string>
+		<key>xcode.syntax.identifier.constant.system</key>
+		<string>0.380255 0.516126 0.605452 1</string>
+		<key>xcode.syntax.identifier.function</key>
+		<string>0.403922 0.717647 0.643137 1</string>
+		<key>xcode.syntax.identifier.function.system</key>
+		<string>0.19407 0.240574 0.522415 1</string>
+		<key>xcode.syntax.identifier.macro</key>
+		<string>0.991311 0.560764 0.246107 1</string>
+		<key>xcode.syntax.identifier.macro.system</key>
+		<string>0.992157 0.560784 0.247059 1</string>
+		<key>xcode.syntax.identifier.type</key>
+		<string>0.378063 0.570001 0.525348 1</string>
+		<key>xcode.syntax.identifier.type.system</key>
+		<string>0.496505 0.399897 0.607265 1</string>
+		<key>xcode.syntax.identifier.variable</key>
+		<string>0.405383 0.717051 0.642088 1</string>
+		<key>xcode.syntax.identifier.variable.system</key>
+		<string>0.632318 0.402193 0.901151 1</string>
+		<key>xcode.syntax.keyword</key>
+		<string>0.537938 0.211826 0.355283 1</string>
+		<key>xcode.syntax.mark</key>
+		<string>0.582292 0.639786 0.709487 1</string>
+		<key>xcode.syntax.markup.code</key>
+		<string>0.665 0.052 0.569 1</string>
+		<key>xcode.syntax.number</key>
+		<string>0.655095 0.602509 0.329341 1</string>
+		<key>xcode.syntax.plain</key>
+		<string>0.0312646 0.0321789 0.030915 0.85</string>
+		<key>xcode.syntax.preprocessor</key>
+		<string>0.991311 0.560764 0.246107 1</string>
+		<key>xcode.syntax.regex</key>
+		<string>0.989117 0.41558 0.365684 1</string>
+		<key>xcode.syntax.regex.capturename</key>
+		<string>0.405383 0.717051 0.642088 1</string>
+		<key>xcode.syntax.regex.charname</key>
+		<string>0.632318 0.402193 0.901151 1</string>
+		<key>xcode.syntax.regex.number</key>
+		<string>0.814983 0.749393 0.412334 1</string>
+		<key>xcode.syntax.regex.other</key>
+		<string>0.80464 0.783833 1 0.85</string>
+		<key>xcode.syntax.string</key>
+		<string>0.675996 0.289964 0.257403 1</string>
+		<key>xcode.syntax.url</key>
+		<string>0.330191 0.511266 0.998589 1</string>
+	</dict>
+	<key>DVTSourceTextSyntaxFonts</key>
+	<dict>
+		<key>xcode.syntax.attribute</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.character</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.comment</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.comment.doc</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.comment.doc.keyword</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.declaration.other</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.declaration.type</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.class</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.class.system</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.constant</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.constant.system</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.function</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.function.system</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.macro</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.macro.system</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.type</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.type.system</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.variable</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.identifier.variable.system</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.keyword</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.mark</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.markup.code</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.number</key>
+		<string>MonofurboldForPowerline - 15.0</string>
+		<key>xcode.syntax.plain</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.preprocessor</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.regex</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.regex.capturename</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.regex.charname</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.regex.number</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.regex.other</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.string</key>
+		<string>MonofurForPowerline - 15.0</string>
+		<key>xcode.syntax.url</key>
+		<string>MonofurForPowerline - 15.0</string>
+	</dict>
+</dict>
+</plist>
