@@ -20,7 +20,7 @@ struct ContentView: View {
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach(0 ..< 10) { i in
-                            UpDownNumberPickerView(digit: $digits[i])
+                            SimpleNumberPickerView(digit: $digits[i])
                         }
                         Button {
                             digits = Self.allZeros
@@ -34,6 +34,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .scrollIndicators(.hidden)
             }
             
             Section("Numerology number") {
@@ -84,3 +85,4 @@ import Playgrounds
     let numeroNumber2 = calculateNumeroNumber(digitArray2, reduceMasterNumber: false)
     let isMasterNumeroNumber2 = isMasterNumber(numeroNumber2)
 }
+
