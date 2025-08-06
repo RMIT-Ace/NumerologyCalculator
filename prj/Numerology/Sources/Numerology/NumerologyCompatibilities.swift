@@ -27,4 +27,3 @@ public let numberCompatibilities: [Int: Compatibility] = [
     8: Compatibility(friends: [2, 4, 8], foes: [3, 7, 9]),
     9: Compatibility(friends: [3, 6, 9], foes: [4, 7, 8]),
 ]
-
