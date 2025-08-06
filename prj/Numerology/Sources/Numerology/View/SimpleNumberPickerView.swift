@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+///
+/// Simple number picker
+///
+/// Provide SwiftUI view for picking a number.
+///
 public struct SimpleNumberPickerView: View {
     
     @Binding var digit: Int
