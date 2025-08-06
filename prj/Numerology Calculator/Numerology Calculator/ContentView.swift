@@ -9,34 +9,33 @@ import SwiftUI
 import Numerology
 
 struct ContentView: View {
-    static let allZeros = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-    @State var digits: [Int] = allZeros
+    @State var maxDigits = 4
+    @State var digits: Array<Int> = .init()
     @State var numeroNumber: Int = 0
     @State var isMasterNumberReduced: Bool = false
     
     var body: some View {
         List {
-            Section("Input digits") {
+            Section {
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0 ..< 10) { i in
-                            SimpleNumberPickerView(digit: $digits[i])
-                        }
-                        Button {
-                            digits = Self.allZeros
-                        } label: {
-                            Text("Reset")
-                                .padding()
-                                .overlay {
-                                    RoundedRectangle(cornerRadius: 6)
-                                        .stroke(style: StrokeStyle(lineWidth: 1))
-                                }
+                        ForEach(0 ..< maxDigits, id: \.self) { i in
+                            UpDownNumberPickerView(digit: $digits[i])
                         }
                     }
                 }
                 .scrollIndicators(.hidden)
+            } header: {
+                Text("Inputs (\(maxDigits)):")
+            } footer: {
+                HStack {
+                    Spacer()
+                    RoundedCornerButton("C") { resetAllDigits() }
+                    RoundedCornerButton("+") { reshapeDigits(maxDigits + 1) }
+                    RoundedCornerButton("-") { reshapeDigits(maxDigits - 1) }
+                }
             }
-            
+
             Section("Numerology number") {
                 HStack {
                     Text("\(numeroNumber)")
@@ -60,12 +59,29 @@ struct ContentView: View {
             }
 
         }
+        .onAppear {
+            resetAllDigits()
+        }
         .onChange(of: digits) { _, newDigits in
             numeroNumber = calculateNumeroNumber(newDigits, reduceMasterNumber: isMasterNumberReduced)
         }
         .onChange(of: isMasterNumberReduced) { _, _ in
             numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
         }
+    }
+    
+    private func resetAllDigits() {
+        digits = Array<Int>(repeating: 0, count: maxDigits )
+        numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
+    }
+    
+    private func reshapeDigits(_ numberOfDigits: Int) {
+        guard numberOfDigits > 0 && numberOfDigits <= 15 && numberOfDigits != maxDigits else {
+            print("WARN: Invalid number of digits: \(numberOfDigits)")
+            return
+        }
+        maxDigits = numberOfDigits
+        resetAllDigits()
     }
 }
 
