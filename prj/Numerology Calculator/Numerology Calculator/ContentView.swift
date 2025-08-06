@@ -35,18 +35,20 @@ struct ContentView: View {
                     RoundedCornerButton("-") { reshapeDigits(maxDigits - 1) }
                 }
             }
-
-            Section("Numerology number") {
+            
+            Section {
                 HStack {
+                    Spacer()
                     Text("\(numeroNumber)")
-                        .font(.system(size: 48, weight: .bold, design: .default))
-                        .frame(width: 48 * 2)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 5)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(style: StrokeStyle(lineWidth: 2))
-                        }
+                        .font(.system(size: 48))
+                        .bold()
+                    Spacer()
+                }
+            } header: {
+                Text("Numerology number:")
+            } footer: {
+                HStack {
+                    Spacer()
                     Toggle("Reduce", isOn: $isMasterNumberReduced)
                         .toggleStyle(ButtonToggleStyle())
                 }
@@ -56,6 +58,7 @@ struct ContentView: View {
                 Text(numberMeanings[numeroNumber] ?? "")
                     .font(.system(size: 20, weight: .bold, design: .default))
                     .italic()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
         }
