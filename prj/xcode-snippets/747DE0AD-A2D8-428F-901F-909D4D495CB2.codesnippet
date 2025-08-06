@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>n-vars</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@State var maxDigits = 4
+@State var digits: Array&lt;Int&gt; = .init()
+@State var numeroNumber: Int = 0
+@State var isMasterNumberReduced: Bool = false</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>747DE0AD-A2D8-428F-901F-909D4D495CB2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>All variables required for Numerology Calculator.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>numero-vars</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

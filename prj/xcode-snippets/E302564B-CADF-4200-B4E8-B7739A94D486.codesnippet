@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>n-play-1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    let series1 = 12345
+    let digitArray1 = numberToDigits(series1)
+    let numeroNumber1 = calculateNumeroNumber(digitArray1, reduceMasterNumber: false)
+    let isMasterNumeroNumber1 = isMasterNumber(numeroNumber1)
+ </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E302564B-CADF-4200-B4E8-B7739A94D486</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Sample of the first block to preview.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>numero-playground-1</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
