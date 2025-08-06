@@ -20,7 +20,7 @@ struct ContentView: View {
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach(0 ..< 10) { i in
-                            DigitPickerView(digit: $digits[i])
+                            UpDownNumberPickerView(digit: $digits[i])
                         }
                         Button {
                             digits = Self.allZeros

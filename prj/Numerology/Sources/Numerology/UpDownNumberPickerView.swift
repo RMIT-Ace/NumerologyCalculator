@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-struct DigitPickerView: View {
+public struct UpDownNumberPickerView: View {
     
     @Binding var digit: Int
     
-    var body: some View {
+    public init(digit: Binding<Int>) {
+        self._digit = digit
+    }
+    
+    public var body: some View {
         VStack(spacing: 8) {
             Button {
                 digit += 1
@@ -28,7 +32,7 @@ struct DigitPickerView: View {
                 }
             }
             .buttonStyle(.plain)
-
+            
             Text("\(digit)")
                 .font(.system(size: 26, weight: .bold, design: .default))
                 .frame(width: 20)
@@ -52,7 +56,7 @@ struct DigitPickerView: View {
                 }
             }
             .buttonStyle(.plain)
-
+            
         }
     }
 }
@@ -62,7 +66,7 @@ struct DigitPickerView: View {
     ScrollView(.horizontal) {
         HStack(spacing: 0) {
             ForEach(0..<8) { i in
-                DigitPickerView(digit: $digits[i])
+                UpDownNumberPickerView(digit: $digits[i])
             }
         }
     }
