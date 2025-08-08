@@ -9,8 +9,10 @@ import SwiftUI
 import Numerology
 
 struct ContentView: View {
+    @Environment(NumerologyViewModel.self) var vm
+    
     @State var maxDigits = 4
-    @State var digits: Array<Int> = .init()
+//    @State var digits: Array<Int> = .init()
     @State var numeroNumber: Int = 0
     @State var isMasterNumberReduced: Bool = false
     
@@ -19,8 +21,9 @@ struct ContentView: View {
             Section {
                 ScrollView(.horizontal) {
                     HStack {
+                        @Bindable var vm = vm
                         ForEach(0 ..< maxDigits, id: \.self) { i in
-                            UpDownNumberPickerView(digit: $digits[i])
+                            UpDownNumberPickerView(digit: $vm.digits[i])
                         }
                     }
                 }
@@ -65,17 +68,17 @@ struct ContentView: View {
         .onAppear {
             resetAllDigits()
         }
-        .onChange(of: digits) { _, newDigits in
-            numeroNumber = calculateNumeroNumber(newDigits, reduceMasterNumber: isMasterNumberReduced)
-        }
-        .onChange(of: isMasterNumberReduced) { _, _ in
-            numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
-        }
+//        .onChange(of: digits) { _, newDigits in
+//            numeroNumber = calculateNumeroNumber(newDigits, reduceMasterNumber: isMasterNumberReduced)
+//        }
+//        .onChange(of: isMasterNumberReduced) { _, _ in
+//            numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
+//        }
     }
     
     private func resetAllDigits() {
-        digits = Array<Int>(repeating: 0, count: maxDigits )
-        numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
+//        digits = Array<Int>(repeating: 0, count: maxDigits )
+//        numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
     }
     
     private func reshapeDigits(_ numberOfDigits: Int) {
@@ -89,7 +92,9 @@ struct ContentView: View {
 }
 
 #Preview {
+    var vm = NumerologyViewModel()
     ContentView()
+        .environment(vm)
 }
 
 import Playgrounds
