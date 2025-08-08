@@ -1,0 +1,15 @@
+{
+  "originHash" : "e5cd73c9b82b7aa6d7b9ed020150d4005e6f9f3703370eb92dc08d1a5017d771",
+  "pins" : [
+    {
+      "identity" : "numerology",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rmit-ace/numerology",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5ba35ccc05a38b86a8bbe40898f5ab19e2c56902"
+      }
+    }
+  ],
+  "version" : 3
+}

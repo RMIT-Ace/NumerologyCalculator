@@ -195,7 +195,7 @@
 			mainGroup = 50D76A6E2E33034400CE1884;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				50AFAEBF2E37207700C96C47 /* XCLocalSwiftPackageReference "../Numerology" */,
+				506DE4EB2E45A18C008E218F /* XCRemoteSwiftPackageReference "numerology" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 50D76A782E33034400CE1884 /* Products */;
@@ -522,12 +522,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		50AFAEBF2E37207700C96C47 /* XCLocalSwiftPackageReference "../Numerology" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Numerology;
+/* Begin XCRemoteSwiftPackageReference section */
+		506DE4EB2E45A18C008E218F /* XCRemoteSwiftPackageReference "numerology" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rmit-ace/numerology";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		504A1A252E371DD0006033A6 /* Numerology */ = {
