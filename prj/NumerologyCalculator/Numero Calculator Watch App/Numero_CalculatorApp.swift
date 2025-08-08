@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import Numerology
 
 @main
 struct Numero_Calculator_Watch_AppApp: App {
+    private var numerologyVm: NumerologyViewModel = .init()
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .environment(numerologyVm)
     }
 }
