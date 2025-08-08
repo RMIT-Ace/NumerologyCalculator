@@ -11,38 +11,33 @@ import Numerology
 struct ContentView: View {
     @Environment(NumerologyViewModel.self) var vm
     
-    @State var maxDigits = 4
-//    @State var digits: Array<Int> = .init()
-    @State var numeroNumber: Int = 0
-    @State var isMasterNumberReduced: Bool = false
-    
     var body: some View {
+        @Bindable var vm = vm
         List {
             Section {
                 ScrollView(.horizontal) {
                     HStack {
-                        @Bindable var vm = vm
-                        ForEach(0 ..< maxDigits, id: \.self) { i in
+                        ForEach(0 ..< vm.maxDigits, id: \.self) { i in
                             UpDownNumberPickerView(digit: $vm.digits[i])
                         }
                     }
                 }
                 .scrollIndicators(.hidden)
             } header: {
-                Text("Inputs (\(maxDigits)):")
+                Text("Inputs (\(vm.digits.count)):")
             } footer: {
                 HStack {
                     Spacer()
-                    RoundedCornerButton("C") { resetAllDigits() }
-                    RoundedCornerButton("+") { reshapeDigits(maxDigits + 1) }
-                    RoundedCornerButton("-") { reshapeDigits(maxDigits - 1) }
+                    RoundedCornerButton("C") { vm.resetAllDigits() }
+                    RoundedCornerButton("+") { vm.maxDigits += 1 }
+                    RoundedCornerButton("-") { vm.maxDigits -= 1 }
                 }
             }
             
             Section {
                 HStack {
                     Spacer()
-                    Text("\(numeroNumber)")
+                    Text("\(vm.numerologyNumber)")
                         .font(.system(size: 48))
                         .bold()
                     Spacer()
@@ -52,43 +47,21 @@ struct ContentView: View {
             } footer: {
                 HStack {
                     Spacer()
-                    Toggle("Reduce", isOn: $isMasterNumberReduced)
+                    Toggle("Reduce", isOn: $vm.isMasterNumberReduced)
                         .toggleStyle(ButtonToggleStyle())
                 }
             }
             
             Section("Prediction") {
-                Text(numberMeanings[numeroNumber] ?? "")
+                Text(vm.prediction)
                     .font(.system(size: 20, weight: .bold, design: .default))
                     .italic()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
         }
-        .onAppear {
-            resetAllDigits()
-        }
-//        .onChange(of: digits) { _, newDigits in
-//            numeroNumber = calculateNumeroNumber(newDigits, reduceMasterNumber: isMasterNumberReduced)
-//        }
-//        .onChange(of: isMasterNumberReduced) { _, _ in
-//            numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
-//        }
     }
     
-    private func resetAllDigits() {
-//        digits = Array<Int>(repeating: 0, count: maxDigits )
-//        numeroNumber = calculateNumeroNumber(digits, reduceMasterNumber: isMasterNumberReduced)
-    }
-    
-    private func reshapeDigits(_ numberOfDigits: Int) {
-        guard numberOfDigits > 0 && numberOfDigits <= 15 && numberOfDigits != maxDigits else {
-            print("WARN: Invalid number of digits: \(numberOfDigits)")
-            return
-        }
-        maxDigits = numberOfDigits
-        resetAllDigits()
-    }
 }
 
 #Preview {
@@ -96,17 +69,3 @@ struct ContentView: View {
     ContentView()
         .environment(vm)
 }
-
-import Playgrounds
-#Playground {
-    let series1 = 12345
-    let digitArray1 = numberToDigits(series1)
-    let numeroNumber1 = calculateNumeroNumber(digitArray1, reduceMasterNumber: false)
-    let isMasterNumeroNumber1 = isMasterNumber(numeroNumber1)
-    
-    let series2 = 24102002
-    let digitArray2 = numberToDigits(series2)
-    let numeroNumber2 = calculateNumeroNumber(digitArray2, reduceMasterNumber: false)
-    let isMasterNumeroNumber2 = isMasterNumber(numeroNumber2)
-}
-
