@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Numerology
 
 struct ContentView: View {
+    private var vm = NumerologyViewModel()
     var body: some View {
         NavigationView {
             VStack {
