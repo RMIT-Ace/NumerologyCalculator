@@ -9,7 +9,7 @@ import SwiftUI
 import Numerology
 
 struct ContentView: View {
-    private var vm = NumerologyViewModel()
+    @Environment(NumerologyViewModel.self) var vm
     var body: some View {
         NavigationView {
             VStack {
