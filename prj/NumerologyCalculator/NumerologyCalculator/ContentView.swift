@@ -21,9 +21,11 @@ struct ContentView: View {
             }
             .padding()
         }
+        .environment(vm)
     }
 }
 
 #Preview {
     ContentView()
+        .environment(NumerologyViewModel())
 }
