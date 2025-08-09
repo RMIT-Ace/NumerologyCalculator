@@ -14,15 +14,8 @@ struct ContentView: View {
     var body: some View {
         @Bindable var vm = vm
         List {
-            Section {
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(0 ..< vm.maxDigits, id: \.self) { i in
-                            UpDownNumberPickerView(digit: $vm.digits[i])
-                        }
-                    }
-                }
-                .scrollIndicators(.hidden)
+            HScrollSectionView($vm.digits) { digit in
+                UpDownNumberPickerView(digit: digit)
             } header: {
                 Text("Inputs (\(vm.digits.count)):")
             } footer: {
@@ -48,7 +41,8 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     Toggle("Reduce", isOn: $vm.isMasterNumberReduced)
-                        .toggleStyle(ButtonToggleStyle())
+                        .toggleStyle(SwitchToggleStyle())
+                        .frame(width: 130)
                 }
             }
             
