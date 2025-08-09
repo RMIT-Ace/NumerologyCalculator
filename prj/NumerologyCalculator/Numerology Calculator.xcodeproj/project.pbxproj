@@ -47,7 +47,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ContentView.swift,
-				HScrollSectionView.swift,
+				NumerologyView.swift,
 			);
 			target = 50508D2C2E34CDAF0026EC7D /* Numero Calculator Watch App */;
 		};
